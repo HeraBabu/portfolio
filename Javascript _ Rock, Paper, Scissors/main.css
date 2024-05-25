@@ -1,0 +1,100 @@
+@font-face {
+  font-family: CircularBlack;
+  src: url('assets/CircularStd-Black.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial';
+  font-family: 'CircularBlack', 'sans-serif';
+}
+
+.page__container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  height: 120px;
+  width: 100vw;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 34px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.player-container {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #f5f7fb;
+  border-radius: 5px;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.2);
+}
+
+.choice-container {
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #f5f7fb;
+  border-radius: 5px;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.2);
+}
+
+.name {
+  font-size: 30px;
+}
+
+#result-area {
+  width: 200px;
+  text-align: center;
+  color: Black;
+}
+
+.hand-btn {
+  padding: 15px 15px;
+  border-radius: 5px;
+  background: #a7e5d8;
+  box-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.hand-btn:hover{
+  background: #217e38;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 64px;
+  width: 100vw;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #6EDCC5;
+}
