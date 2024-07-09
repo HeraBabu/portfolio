@@ -28,7 +28,7 @@ p{
   font-size: 3rem;
   line-height: 1.5;
 }
-.dection-heading{
+.section-heading{
   font-size: 3rem;
   line-height: 1.5;
 }
@@ -59,25 +59,6 @@ p{
   margin: 5% 3% 5% 0;
 }
 
-/*hero section*/
-hr {
-  height:5px;
-  border-width:0;
-  background-color:whitesmoke;
-}
-
-.large-text {
-  font-size: 4rem; /* Adjust the size as needed */
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.2;
-  color: whitesmoke;
-}
-
-.change-text{
-  position: relative;
-}
-
 /*title image*/
 .title-image{
   width: 60%;
@@ -85,19 +66,7 @@ hr {
   left: 30%;
 }
 
-.content-right{
-  width:45%;
-  box-shadow: #8f8f8f;
-  border-radius: 05px;
-  transform: translateX(300%);
-  animation: imgAnimate 5s forwards;
-}
-.content-right img{
-  display: block;
-  min-height: 100%;
-  width: 100%;
-  border-radius: 05px;
-}
+
 .icon{
   color:#ffbd59;
   margin-bottom:1rem;
@@ -125,21 +94,26 @@ hr {
 .project-image{
   width: 100%;
   position:relative;
-  
 }
 
-/* Call to Action */
+/*call to action section with grid*/
 #cta{
   background-color: #ffbd59;
-  padding: 100px;
   text-align: center;
+  padding: 3% 15%;
 }
 
-.wrapper { 
+.grid-container{
   background-color: #ffbd59;
+  display: grid;
+  grid-template-columns: 50% auto;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*Grid item 1 contact form */
+.wrapper { 
 	position: relative; 
-	max-width: 350px; 
-	width: 100%; 
 	background: #fff; 
 	padding: 25px; 
 	border-radius: 5px; 
@@ -170,7 +144,7 @@ hr {
 
 .wrapper textarea { 
 	resize: none; 
-	height: 80px; 
+	height: 150px; 
 } 
 
 .wrapper .btn input[type="submit"] { 
@@ -179,7 +153,7 @@ hr {
 	padding: 10px; 
 	text-align: center; 
 	width: 100%; 
-	background: #ffbd59; 
+	background: #a56f50; 
 	color: #fcfbf7; 
 	text-transform: uppercase; 
 	letter-spacing: 5px; 
@@ -188,37 +162,33 @@ hr {
 	cursor: pointer; 
 } 
 
-#error_message { 
-	margin-bottom: 20px; 
-	background: #fe8b8e; 
-	padding: 0px; 
-	text-align: center; 
-	font-size: 14px; 
-	transition: all 0.5s ease; 
-}
-
-#confirmationMessage {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 1.2em;
-  color: #28a745;
+/*grid item 2 contact image*/
+.contact-image{
+  position:relative;
+  max-width: 350px; 
+  border-radius: 5px; 
+  box-shadow: 4px 4px 2px
+  rgba(254, 236, 164, 1); 
 }
 
 /* Footer */
 
 #footer{
   background-color: #fff;
-  padding:7% 15%;
+  padding:0% 7% 0% 7%;
   text-align: center;
 }
 
 .fooicon{
-  padding:20px 10px;
+  padding:10px 10px;
 }
 
 /*Fine tuning the title image to be responsive*/
-@keyframes imgAnimate {
-  to{
-    transform: translateX(0);
+@media (max-width: 1028px){
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
   }
 }
