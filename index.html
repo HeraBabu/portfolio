@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- global styles and settings .. required tags for bootstrap -->
+  <meta charset="utf-8">
+  <title>Hera Babu MiniPortfolio</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+
+
+  <!-- CSS stylesheets-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!-- Font Awesome-->
+  <script src="https://kit.fontawesome.com/2f1794c74f.js" crossorigin="anonymous"></script>
+  <!--<script src="https://use.fontawesome.com/cf8ccb291c.js"></script> -->
+
+  <!-- Bootstrap Scripts-->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="images/hera_favicon.png">
+</head>
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="">Hera Babu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Weekend Projects</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">Hello, World!</h1>
+          <h2>I am a curious and creative person, hungry for life experiences.
+            I love designing and developing clean and elegant websites.
+            </h2>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/Hera.png" alt="Hera image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- weekend projects -->
+
+  <section id="projects">
+
+    <h2 class="section-heading">Projects</h2>
+    <p>Simple Projects displaying skills in Frontend web development.</p>
+
+    <div class="card-deck">
+      <div class="container">
+      <div class="row">
+        <div class="projects-column col-md-6 col-lg-4 ">
+          <div class="card">
+            <div class="card-header">
+              <h3>JavaScript Game</h3>
+            </div>
+            <div class="card-body">
+              <img class="project-image" src="images/memorygame.jpg" alt="memory-mockup">
+              <a href="Javascript_memory\index.html"><button type="button" class="btn btn-outline-dark btn-lg btn-block">View Project</button></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="projects-column col-md-6 col-lg-4 ">
+          <div class="card">
+            <div class="card-header">
+              <h3>Javascript Game</h3>
+            </div>
+            <div class="card-body">
+              <p></p>
+              <img class="project-image" src="images/rockpaperscissors.jpg" alt="RPS-mockup">
+              <a href="Javascript _ Rock, Paper, Scissors\index.html"><button type="button" class="btn btn-dark btn-lg btn-block">View Project</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-column col-md-6 col-lg-4 ">
+          <div class="card">
+            <div class="card-header">
+              <h3>Bootstrap Website</h3>
+            </div>
+            <div class="card-body">
+              <p>Mock Website for finding hiking buddies and trails.</p>
+              <img class="project-image" src="images/wanderlust.jpg" alt="wanderlust-mockup">
+              <a href="wanderlust\index.html"><button type="button" class="btn btn-dark btn-lg btn-block">View Project</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+</div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+<section id="cta">
+  <h2 class="section-heading">Contact</h2>
+  <h2>Hire Me</h2>
+  <p>If you are looking for a professional and dedicated [Your Profession], you are in the right place! With extensive experience and a passion for excellence, I am ready to bring your projects to life.</p>
+  <p>Contact me today to discuss your needs and how I can help you achieve your goals.</p>      
+  <div class="grid-container">
+    <div class="grid-item2 wrapper">
+      <h2 style="color:#a56f50">Get in Touch</h2>
+      <form id="contactForm" action="https://formsubmit.co/herababu14@gmail.com" method="POST">
+        <div  class ="input_field">
+          <input type="text" id="name" name="name" placeholder="Last Name" required>
+        </div>
+
+        <div  class ="input_field">
+          <input type="text" id="email" name="email" placeholder="Email" required>
+        </div>
+              
+        <div  class ="input_field">
+          <textarea id="message" name="message" placeholder="Message"required></textarea>
+        </div>
+
+        <div class="btn">
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+    <div class="grid-item3">
+      <img class="contact-image" src="images/contact-image.png" alt="contact image"> 
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <h3>To view more checkout my <a href="https://github.com/HeraBabu">Github</a> page.</h3>
+    <p>© Copyright 2024 Hera Babu</p>
+    <img class="logo" src="images/hera_favicon.png">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
